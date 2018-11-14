@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PUMAapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="pipeline">蓝牙控制器</string>
+    <string name="open_bluetooth">开启蓝牙</string>
+    <string name="close_bluetooth">关闭蓝牙</string>
+    <string name="search_bluetooth">搜索蓝牙</string>
+    <string name="all_data">全部数据:</string>
+    <color name="item_default">#F0F0F0</color>
+    <color name="item_press">#A5D8F5</color>
+</resources>

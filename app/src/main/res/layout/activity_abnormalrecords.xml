@@ -9,8 +9,8 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    android:background="@drawable/binding"
-    tools:context="com.example.lenovo.pumaapp.ActivityPEBBinding">
+    android:background="@drawable/abnormalrecords"
+    tools:context="com.example.lenovo.pumaapp.ActivityAbnormalRecords">
 
     <ImageButton
         android:id="@+id/button_close"
@@ -21,13 +21,5 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp">
-        /*android:layout_height="18dp"
-        android:layout_width="18dp"
-        android:background="@drawable/close"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="14dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"*/
-
     </ImageButton>
 </RelativeLayout>

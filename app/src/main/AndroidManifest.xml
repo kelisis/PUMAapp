@@ -63,6 +63,8 @@
         <service android:name="com.amap.api.location.APSService"></service>
         <!--添加实现类-->
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ActivityAbnormalRecords"></activity>
+        <activity android:name=".ActivityFactoryInformation"></activity>
         <activity android:name=".ActivityLocation"></activity>
         <activity android:name=".ActivityInformation"></activity>
         <activity android:name=".ActivitySettings"></activity>

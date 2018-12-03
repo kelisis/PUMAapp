@@ -8,31 +8,31 @@ import android.view.View;
 import android.widget.ImageButton;
 
 /**
- * Created by lenovo on 2018/6/5.
+ * Created by lenovo on 2018/12/2.
  */
 
-public class ActivityMileage extends AppCompatActivity {
+public class ActivityFactoryInformation extends AppCompatActivity{
 
     public static BluetoothSocket btSocket;
     String toSend = "";
-    private ImageButton mileage_back;
+    private ImageButton button_close;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mileage);
+        setContentView(R.layout.activity_factoryinformation);
 
         //蓝牙getName()
         //BluetoothSocket btSocket  = ((MyApp)getApplication()).getName();
 
-        mileage_back=(ImageButton)findViewById(R.id.mileage_back);
+        button_close=(ImageButton)findViewById(R.id.button_close);
 
-        mileage_back.setOnClickListener(new View.OnClickListener() {
+        button_close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             }
         });
-        mileage_back.setOnClickListener(new View.OnClickListener() {
+        button_close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

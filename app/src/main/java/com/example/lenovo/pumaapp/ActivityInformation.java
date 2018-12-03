@@ -50,6 +50,47 @@ public class ActivityInformation extends AppCompatActivity {
             }
         });
 
+        button_AbnormalRecords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        button_AbnormalRecords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a=new Intent(ActivityInformation.this,ActivityAbnormalRecords.class);
+                startActivity(a);
+            }
+        });
+
+        button_FactoryInformation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        button_FactoryInformation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a=new Intent(ActivityInformation.this,ActivityFactoryInformation.class);
+                startActivity(a);
+            }
+        });
+
+        button_PEBBinding.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        button_PEBBinding.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a=new Intent(ActivityInformation.this,ActivityPEBBinding.class);
+                startActivity(a);
+            }
+        });
+
+
+
         information_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

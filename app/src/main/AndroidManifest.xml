@@ -72,6 +72,7 @@
         <activity android:name=".ActivityPEBBinding"></activity>
         <activity android:name=".InitialActivity"></activity>
         <activity android:name=".ActivityMileage"></activity>
+        <activity android:name=".TextMileage"></activity>
 
     </application>
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/lock"
+    tools:context="com.example.lenovo.pumaapp.ActivityPEBLock">
+
+    <ImageButton
+        android:id="@+id/button_PEBLockBack"
+        android:layout_height="24dp"
+        android:layout_width="14dp"
+        android:background="@drawable/back"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/CarShadow"
+        android:layout_height="310dp"
+        android:layout_width="400dp"
+        android:background="@drawable/unlockimage"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+        </ImageView>
+
+<!--    <ImageButton
+        android:id="@+id/button_PEBLockButton"
+        android:layout_height="52dp"
+        android:layout_width="64dp"
+        android:background="@drawable/lockbutton"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="129dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+    </ImageButton>-->
+
+    <com.example.lenovo.pumaapp.SlideLockView
+        android:layout_width="320dp"
+        android:layout_height="@dimen/slide_height"
+        app:lock_drawable="@drawable/unlockbutton"
+        app:lock_radius="30dp"
+        app:lock_tips_tx="slide to lock"
+        app:lock_tips_tx_color="#ffffff"
+        app:locl_tips_tx_size="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="474dp"
+        android:background="@drawable/shape_slide_lock_bg"
+        android:id="@+id/slideLockView"
+        />
+</RelativeLayout>

@@ -6,6 +6,9 @@ import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -18,14 +21,16 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton button_Location;
     private ImageButton button_Settings;
     private ImageButton button_bluetooth;
+    private ImageButton button_Community;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //蓝牙getName()
-        BluetoothSocket btSocket  = ((MyApp)getApplication()).getName();
+
+                //蓝牙getName()
+        //BluetoothSocket btSocket  = ((MyApp)getApplication()).getName();
 
         //绑定控件
         button_PEBLock=(ImageButton)findViewById(R.id.button_PEBLock);
@@ -33,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
         button_Location=(ImageButton)findViewById(R.id.button_Location);
         button_Settings=(ImageButton)findViewById(R.id.button_Settings);
         button_bluetooth=(ImageButton)findViewById(R.id.button_bluetooth);
-
-        toSend = "P5G00E0E00F";
+        button_Community=(ImageButton)findViewById(R.id.button_Community);
 
         //为控件添加事件
         button_PEBLock.setOnClickListener(new View.OnClickListener() {
@@ -88,7 +92,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(e);
             }
         });
-
+        button_Community.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
+        button_Community.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent f = new Intent(MainActivity.this, ActivityCommunity.class);
+                startActivity(f);
+            }
+        });
         button_bluetooth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
